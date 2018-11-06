@@ -1,5 +1,5 @@
 # Exercise 12 - Extending the Deployment Pipeline
-[< Prev](11-continuous-delivery-gocd.md)  [Next >](13-pipeline-as-code.md)
+[< PREV](11-continuous-delivery-gocd.md) | [TOC](README.md) | [NEXT >](13-pipeline-as-code.md)
 
 
 ## Goals

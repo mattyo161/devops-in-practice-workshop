@@ -1,5 +1,5 @@
 # Exercise 5 - Run Application on Kubernetes
-[< Prev](4-mysql-kubernetes.md)  [Next >](6-horizontal-scaling.md)
+[< PREV](4-mysql-kubernetes.md) | [TOC](README.md) | [NEXT >](6-horizontal-scaling.md)
 
 ## Goals
 

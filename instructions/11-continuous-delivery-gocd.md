@@ -1,5 +1,5 @@
 # Exercise 11 - Continuous Delivery with GoCD
-[< Prev](10-deploying-to-the-cloud.md)  [Next >](12-extending-deployment-pipeline.md)
+[< PREV](10-deploying-to-the-cloud.md) | [TOC](README.md) | [NEXT >](12-extending-deployment-pipeline.md)
 
 
 ## Goals

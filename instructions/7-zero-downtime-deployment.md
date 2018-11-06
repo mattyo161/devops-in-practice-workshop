@@ -1,5 +1,5 @@
 # Exercise 7 - Rolling out an Application Change with Zero Downtime
-[< Prev](6-horizontal-scaling.md)  [Next >](8-rollback.md)
+[< PREV](6-horizontal-scaling.md) | [TOC](README.md) | [NEXT >](8-rollback.md)
 
 
 ## Goals

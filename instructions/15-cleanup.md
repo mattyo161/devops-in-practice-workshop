@@ -1,5 +1,5 @@
 # Exercise 15 - Cleanup
-[< Prev](14-canary-release.md)
+[< PREV](14-canary-release.md) | [TOC](README.md)
 
 
 ## Goals

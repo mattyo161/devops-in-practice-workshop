@@ -1,5 +1,5 @@
 # Exercise 13 - Pipeline as Code
-[< Prev](12-extending-deployment-pipeline.md)  [Next >](14-canary-release.md)
+[< PREV](12-extending-deployment-pipeline.md) | [TOC](README.md) | [NEXT >](14-canary-release.md)
 
 
 ## Goals

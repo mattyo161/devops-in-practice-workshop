@@ -1,5 +1,5 @@
 # Exercise 10 - Deploying to the Cloud
-[< Prev](9-cloud-migration.md)  [Next >](11-continuous-delivery-gocd.md)
+[< PREV](9-cloud-migration.md) | [TOC](README.md) | [NEXT >](11-continuous-delivery-gocd.md)
 
 
 ## Goals

@@ -1,5 +1,5 @@
 # Exercise 2 - Running with a Persistent Database
-[< Prev](1-docker.md)  [Next >](3-docker-compose.md)
+[< PREV](1-docker.md)  | [TOC](README.md) |  [NEXT >](3-docker-compose.md)
 
 ## Goals
 

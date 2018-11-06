@@ -1,5 +1,5 @@
 # Exercise 4 - Running MySQL on Kubernetes
-[< Prev](3-docker-compose.md)  [Next >](5-application-kubernetes.md)
+[< PREV](3-docker-compose.md) | [TOC](README.md) | [NEXT >](5-application-kubernetes.md)
 
 ## Goals
 

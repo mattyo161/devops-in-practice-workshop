@@ -1,5 +1,5 @@
 # Exercise 9 - Moving to the Cloud: Infrastructure as Code to provision Kubernetes Cluster on GCP
-[< Prev](8-rollback.md)  [Next >](10-deploying-to-the-cloud.md)
+[< PREV](8-rollback.md) | [TOC](README.md) | [NEXT >](10-deploying-to-the-cloud.md)
 
 
 ## Goals
