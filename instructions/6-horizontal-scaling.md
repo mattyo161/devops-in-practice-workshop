@@ -1,4 +1,6 @@
 # Exercise 6 - Scaling up our Application
+[< Prev](5-application-kubernetes.md)  [Next >](7-zero-downtime-deployment.md)
+
 
 ## Goals
 
