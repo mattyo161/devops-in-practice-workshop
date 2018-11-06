@@ -1,4 +1,6 @@
 # Exercise 15 - Cleanup
+[< Prev](14-canary-release.md)
+
 
 ## Goals
 

@@ -1,4 +1,6 @@
 # Exercise 14 - Canary Release
+[< Prev](13-pipeline-as-code.md)  [Next >](15-cleanup.md)
+
 
 ## Goals
 

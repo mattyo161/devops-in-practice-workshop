@@ -1,4 +1,6 @@
 # Exercise 8 - Rolling back to Previous Version
+[< Prev](7-zero-downtime-deployment.md)  [Next >](9-cloud-migration.md)
+
 
 ## Goals
 

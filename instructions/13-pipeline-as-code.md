@@ -1,4 +1,6 @@
 # Exercise 13 - Pipeline as Code
+[< Prev](12-extending-deployment-pipeline.md)  [Next >](14-canary-release.md)
+
 
 ## Goals
 

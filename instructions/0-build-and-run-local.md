@@ -1,4 +1,5 @@
 # Exercise 0 - Building and Running Locally
+[Next >](1-docker.md)
 
 ## Goals
 
