@@ -10,7 +10,7 @@ configurator = GoCdConfigurator(HostRestClient(go_server_url))
 pipeline = configurator\
 	.ensure_pipeline_group("sample")\
 	.ensure_replacement_of_pipeline("Meta")\
-	.set_git_material(GitMaterial("https://github.com/mattyo161/devops-in-practice-workshop.git", ignore_patterns=set(['pipelines/*']), invert_filter="True"))
+	.set_git_material(GitMaterial("https://github.com/mattyo161/devops-in-practice-workshop.git", branch="master", ignore_patterns=set(['pipelines/*']), invert_filter="True"))
 stage = pipeline.ensure_stage("update-pipelines")
 job = stage.ensure_job("update-pipelines").set_elastic_profile_id("docker-jdk")
 job.add_task(ExecTask(['pipelines/update.sh']))

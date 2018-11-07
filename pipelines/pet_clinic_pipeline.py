@@ -12,8 +12,8 @@ pipeline = configurator\
 	.ensure_replacement_of_pipeline("PetClinic")\
 	.set_git_material(GitMaterial("https://github.com/mattyo161/devops-in-practice-workshop.git", branch="master", ignore_patterns=set(['pipelines/*']), shallow="True")).ensure_environment_variables({'GCLOUD_ZONE': 'us-east1-b', 'GCLOUD_PROJECT_ID': 'devops-workshop-221503', 'GCLOUD_CLUSTER': 'devops-workshop-gke'}).ensure_encrypted_environment_variables({'GCLOUD_SERVICE_KEY': secret_variables})
 stage = pipeline.ensure_stage("commit")
-job = stage.ensure_job("build-and-publish").ensure_environment_variables({'MAVEN_OPTS': '-Xmx1024m'}).ensure_encrypted_environment_variables({}).set_elastic_profile_id("docker-jdk")
-job.add_task(ExecTask(['./mvnw', 'clean package']))
+job = stage.ensure_job("build-and-publish").ensure_environment_variables({'MAVEN_OPTS': '-Xmx1024m'}).set_elastic_profile_id("docker-jdk")
+job.add_task(ExecTask(['./mvnw', 'clean', 'package']))
 job.add_task(ExecTask(['bash', '-c', 'docker build --tag pet-app:$GO_PIPELINE_LABEL --build-arg JAR_FILE=target/spring-petclinic-2.0.0.BUILD-SNAPSHOT.jar .']))
 job.add_task(ExecTask(['bash', '-c', 'docker login -u _json_key -p"$(echo $GCLOUD_SERVICE_KEY | base64 -d)" https://us.gcr.io']))
 job.add_task(ExecTask(['bash', '-c', 'docker tag pet-app:$GO_PIPELINE_LABEL us.gcr.io/$GCLOUD_PROJECT_ID/pet-app:$GO_PIPELINE_LABEL']))
