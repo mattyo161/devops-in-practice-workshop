@@ -10,7 +10,7 @@ secret_variables = {'GCLOUD_SERVICE_KEY': 'AES:+3KBS97MXplXyFRqGAOkvQ==:QqQ1D4Ri
 pipeline = configurator\
 	.ensure_pipeline_group("sample")\
 	.ensure_replacement_of_pipeline("PetClinic")\
-	.set_git_material(GitMaterial("https://github.com/mattyo161/devops-in-practice-workshop.git", branch="master", ignore_patterns=set(['pipelines/*']), shallow="True")).ensure_environment_variables({'GCLOUD_ZONE': 'us-east1-b', 'GCLOUD_PROJECT_ID': 'devops-workshop-221503', 'GCLOUD_CLUSTER': 'devops-workshop-gke'}).ensure_encrypted_environment_variables({'GCLOUD_SERVICE_KEY': secret_variables})
+	.set_git_material(GitMaterial("https://github.com/mattyo161/devops-in-practice-workshop.git", branch="master", ignore_patterns=set(['pipelines/*']))).ensure_environment_variables({'GCLOUD_ZONE': 'us-east1-b', 'GCLOUD_PROJECT_ID': 'devops-workshop-221503', 'GCLOUD_CLUSTER': 'devops-workshop-gke'}).ensure_encrypted_environment_variables({'GCLOUD_SERVICE_KEY': secret_variables})
 stage = pipeline.ensure_stage("commit")
 job = stage.ensure_job("build-and-publish").ensure_environment_variables({'MAVEN_OPTS': '-Xmx1024m'}).set_elastic_profile_id("docker-jdk")
 job.add_task(ExecTask(['./mvnw', 'clean', 'package']))
