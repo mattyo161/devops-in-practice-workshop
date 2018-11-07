@@ -15,4 +15,4 @@ stage = pipeline.ensure_stage("update-pipelines")
 job = stage.ensure_job("update-pipelines").set_elastic_profile_id("docker-jdk")
 job.add_task(ExecTask(['pipelines/update.sh']))
 
-configurator.save_updated_config(save_config_locally=True, dry_run=True)
+configurator.save_updated_config()
